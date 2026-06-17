@@ -1,0 +1,156 @@
+/* style.css password-generator-app */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #232526, #414345);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: #333;
+    font-size: 2rem;
+}
+
+.password-box {
+    margin-bottom: 25px;
+}
+
+.password-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+#password-input {
+    flex: 1;
+    padding: 14px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    background: #fafafa;
+}
+
+#password-input:focus {
+    border-color: #4a90e2;
+}
+
+#copyBtn {
+    padding: 14px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #4a90e2;
+    color: white;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+#copyBtn:hover {
+    background: #357abd;
+}
+
+.settings {
+    margin-bottom: 25px;
+}
+
+.length-control {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.length-control label {
+    font-weight: bold;
+    color: #444;
+}
+
+#lengthSlider {
+    width: 100%;
+    cursor: pointer;
+}
+
+fieldset {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+legend {
+    padding: 0 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+fieldset label {
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+    color: #444;
+}
+
+fieldset input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.generate-btn-wrapper {
+    text-align: center;
+}
+
+#generateBtn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #28a745;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#generateBtn:hover {
+    background: #218838;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    .password-wrapper {
+        flex-direction: column;
+    }
+
+    #copyBtn {
+        width: 100%;
+    }
+
+    .header h1 {
+        font-size: 1.6rem;
+    }
+}
